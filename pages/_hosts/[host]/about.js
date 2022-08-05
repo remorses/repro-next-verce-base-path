@@ -1,8 +1,9 @@
 export default function Page({ host }) {
     return (
         <div className=''>
+            <div className=''>host: {host}</div>
+            <br /> 
             <div className=''>about</div>
-            <br /> <div className=''> {host}</div>
         </div>
     )
 }

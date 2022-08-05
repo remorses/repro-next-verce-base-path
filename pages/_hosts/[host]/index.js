@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Page({ host }) {
     return (
         <div className=''>
-            {host}
+            host: {host}
             <br />
             <Link href={'/about'}>about</Link>{' '}
         </div>
