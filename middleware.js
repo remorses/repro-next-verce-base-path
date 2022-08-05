@@ -12,13 +12,6 @@ export default function middleware(req) {
 
     console.info('url', req.url)
 
-    if (
-        pathnameWithoutBase.startsWith('/_next/') ||
-        pathnameWithoutBase.startsWith('/_hosts')
-    ) {
-        return
-    }
-
     const base = req.nextUrl.origin
 
     return NextResponse.rewrite(
